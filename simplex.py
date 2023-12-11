@@ -79,7 +79,7 @@ class Simplex:
                                                     while self.negative_verication():
                                                         self.calculate()
                                                         self.mostrar_tabela()
-                                                        if __name__ == '__simplex de padaria 1.0__':
+                                                        if __name__ == '__simplex__':
                                                             """
                                                             MAX : Z = 5x + 8y
                                                             3x + 2y <= 6
