@@ -17,11 +17,11 @@ class Simplex:
         def add_restriction (self, sa: list):
             self.table.append(sa)
         #procura do pivo
-        def entry_column (self,) -> list:
+        def entry_column (self) -> int:
             #o pivo fica localizado na coluna 0, e é o menor valor desta coluna
-            pivo_column = min(self.table.[0]):
+            pivo_column = min(self.table[0])
             index = self.table[0].index(pivo_column)
-            return self.index
+            return index
             def line_exit (self, entry_column: int) -> int:
                 result = {}
                 for line in range (len(self.table)):
@@ -34,17 +34,18 @@ class Simplex:
 
                             return index
 
-                            def calcular_nova_linha (self, linha: list entry_column: int, pivo_line: list) -> list:
-                                pivo = line[entry_column] * [-1]
+                            def calcular_nova_linha (self, line: list, entry_column: int, pivo_line: list) -> list:
+                                pivo = line[entry_column] * -1
                                 #verificação
                                 result_line = [value* pivo for value in pivo_line]
                                  nova_line = []
 
                                 
                             for i in range (len(result_line)):
-                                soma = result_line[i] + line [i]
+                                soma = result_line[i] + line[i]
                                 nova_line.append(soma)
                                 return nova_line
+                                
                                 def negative_verication (self) -> bool:
                                     negative = list(filter(lambda x: x < 0, self.table [0]))
                                     
@@ -71,7 +72,7 @@ class Simplex:
                                         while index < len (self.table):
                                             if index != new_line_exit:
                                                 line = tableau [index]
-                                                new_line = self.calcular_nova_linha(line, entry_column, pivo_line)
+                                                nova_line = self.calcular_nova_linha(line, entry_column, pivo_line)
                                                 index += 1
 
                                                 def solve(self):
