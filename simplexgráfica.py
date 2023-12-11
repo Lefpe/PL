@@ -1,3 +1,7 @@
+#nesta versão tive bastante dificuldade, pois tive que lidar com erros de indentação com a interface gráfica
+# utilizei a biblioteca tkinter para criar a interface gráfica
+#e o código base utilizado do simplex revisado
+#falta implementações ainda também
 import tkinter as tk
 from tkinter import ttk
 
