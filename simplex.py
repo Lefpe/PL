@@ -38,12 +38,12 @@ class Simplex:
                                 pivo = line[entry_column] * -1
                                 #verificação
                                 result_line = [value* pivo for value in pivo_line]
-                                 nova_line = []
+                                 new_line = []
 
                                 
                             for i in range (len(result_line)):
                                 soma = result_line[i] + line[i]
-                                nova_line.append(soma)
+                                new_line.append(soma)
                                 return nova_line
                                 
                                 def negative_verication (self) -> bool:
@@ -72,7 +72,7 @@ class Simplex:
                                         while index < len (self.table):
                                             if index != new_line_exit:
                                                 line = tableau [index]
-                                                nova_line = self.calcular_nova_linha(line, entry_column, pivo_line)
+                                                new_line = self.calcular_nova_linha(line, entry_column, pivo_line)
                                                 index += 1
 
                                                 def solve(self):
