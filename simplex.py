@@ -1,5 +1,5 @@
 # PL
-Programação Linear
+#Programação Linear
 #avaliação n3
 #disciplina de programação linear
 #implementação do simplex
@@ -21,7 +21,7 @@ class Simplex:
             #o pivo fica localizado na coluna 0, e é o menor valor desta coluna
             pivo_column = min(self.table.[0]):
             index = self.table[0].index(pivo_column)
-            return self.table[index]
+            return self.index
             def line_exit (self, entry_column: int) -> int:
                 result = {}
                 for line in range (len(self.table)):
